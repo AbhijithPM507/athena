@@ -1,0 +1,55 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "medical_meadow_medqa",
+  "dataset_size": 10225018,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/medalpaca/medical_meadow_medqa@c1b14eb49d9208bac653410f2badd64b2a9fa238/medical_meadow_medqa.json": {
+      "num_bytes": 10671799,
+      "checksum": null
+    }
+  },
+  "download_size": 10671799,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 20896817,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 10225018,
+      "num_examples": 10178,
+      "dataset_name": "medical_meadow_medqa"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,16 @@
+tokenizer_name: "NousResearch/Meta-Llama-3-8B-Instruct"
+max_seq_length: 512
+samples_per_task_train: 1000
+samples_per_task_val: 200
+output_dir: "./data/processed"
+seed: 42
+num_proc: 1
+
+athena_hyperparams:
+  surprise_threshold: 2.50
+  decay_lambda: 0.05          # Decay rate for Memory Strength (Ebbinghaus forgetting curve)
+  decay_risk_threshold: 0.60  # If memory strength S < 0.60, sample is flagged as "At-Risk"
+  max_buffer_size: 400        # Represents the 60% buffer reduction target (400 vs 1000 raw samples)
+  delta_theta_threshold: 0.15 # Intrinsic "model time" threshold for triggering consolidation
+  ema_alpha_base: 0.20        # Base consolidation transfer rate (max transfer speed when stable)
+  instability_gamma: 2.0      # Sensitivity scaling factor for Instability Ratio 'r'
